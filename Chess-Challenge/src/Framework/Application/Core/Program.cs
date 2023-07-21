@@ -1,4 +1,5 @@
 ﻿using Raylib_cs;
+using System;
 using System.IO;
 using System.Numerics;
 using System.Runtime.InteropServices;
@@ -12,6 +13,9 @@ namespace ChessChallenge.Application
 
         public static void Main()
         {
+            // string appDataPath = FileHelper.AppDataPath;
+            Console.Write(Directory.GetCurrentDirectory());
+
             Vector2 loadedWindowSize = GetSavedWindowSize();
             int screenWidth = (int)loadedWindowSize.X;
             int screenHeight = (int)loadedWindowSize.Y;

@@ -106,7 +106,7 @@ namespace ChessChallenge.Application
 
         public static string GetResourcePath(params string[] localPath)
         {
-            return Path.Combine(Directory.GetCurrentDirectory(), "resources", Path.Combine(localPath));
+            return Path.Combine(Directory.GetCurrentDirectory(), "Chess-Challenge", "resources", Path.Combine(localPath));
         }
 
         public static float Scale(float val, int referenceResolution = referenceResolution)
